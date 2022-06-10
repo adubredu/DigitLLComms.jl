@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/artl.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+ws2tcpip.h
+-
+netinet/ip.h
+-
+
+/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/lowlevelapi.c
+lowlevelapi.h
+/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/lowlevelapi.h
+artl.h
+/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/artl.h
+stdio.h
+-
+string.h
+-
+
+/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/lowlevelapi.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
