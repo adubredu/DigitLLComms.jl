@@ -18,6 +18,11 @@ function get_base_translation(obs::Ref{llapi_observation_t})
     return unsafe_wrap(Array, val, 3) 
 end
 
+function get_base_orientation(obs::Ref{llapi_observation_t})
+    val = @ccall ll.get_base_orientation(obs::Ref{llapi_observation_t})::Ptr{Cdouble}
+    return unsafe_wrap(Array, val, 4) 
+end
+
 function get_base_linear_velocity(obs::Ref{llapi_observation_t})
     val = @ccall ll.get_base_linear_velocity(obs::Ref{llapi_observation_t})::Ptr{Cdouble}
     return unsafe_wrap(Array, val, 3) 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src
+# Install script for directory: /home/alphonsus/research/projects/DigitLLComms/src/cpp_src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblowlevelapi.so"
          RPATH "/usr/local/lib:/home/alphonsus/software/cxxwrap/libcxxwrap-julia-build/lib")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/build/lib/liblowlevelapi.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/build/lib/liblowlevelapi.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblowlevelapi.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblowlevelapi.so")
     file(RPATH_CHANGE
@@ -65,5 +65,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

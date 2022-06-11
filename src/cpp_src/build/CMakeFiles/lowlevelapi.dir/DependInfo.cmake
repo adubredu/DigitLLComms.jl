@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/lowlevelapi.c" "/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/build/CMakeFiles/lowlevelapi.dir/lowlevelapi.c.o"
+  "/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/lowlevelapi.c" "/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/build/CMakeFiles/lowlevelapi.dir/lowlevelapi.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

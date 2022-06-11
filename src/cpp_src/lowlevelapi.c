@@ -293,6 +293,17 @@ double* get_base_translation(llapi_observation_t* obs){
   }
   return translation;
 }
+
+double* get_base_orientation(llapi_observation_t* obs){
+  int val = artl_subscriber_update(sub, obs); 
+  static double orientation[4];
+  orientation[0] = obs->base.orientation.w;
+  orientation[1] = obs->base.orientation.x;
+  orientation[2] = obs->base.orientation.y;
+  orientation[3] = obs->base.orientation.z;
+  return orientation;
+}
+
 double* get_base_linear_velocity(llapi_observation_t* obs){
   int val = artl_subscriber_update(sub, obs); 
   static double linear_velocity[3];

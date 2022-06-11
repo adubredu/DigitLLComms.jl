@@ -1,7 +1,7 @@
-/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/build/CMakeFiles/install/strip.dir
-/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/build/CMakeFiles/edit_cache.dir
-/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/build/CMakeFiles/lowlevelapi.dir
-/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/build/CMakeFiles/list_install_components.dir
-/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/build/CMakeFiles/install/local.dir
-/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/build/CMakeFiles/rebuild_cache.dir
-/home/alphonsus/research/projects/DigitComms/src/lowlevel/cpp_src/build/CMakeFiles/install.dir
+/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/build/CMakeFiles/install/strip.dir
+/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/build/CMakeFiles/edit_cache.dir
+/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/build/CMakeFiles/lowlevelapi.dir
+/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/build/CMakeFiles/list_install_components.dir
+/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/build/CMakeFiles/install/local.dir
+/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/build/CMakeFiles/rebuild_cache.dir
+/home/alphonsus/research/projects/DigitLLComms/src/cpp_src/build/CMakeFiles/install.dir

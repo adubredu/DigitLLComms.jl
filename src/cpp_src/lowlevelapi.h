@@ -118,6 +118,7 @@ double* get_motor_velocities(llapi_observation_t* obs);
 double* get_motor_torques(llapi_observation_t* obs);
 
 double* get_base_translation(llapi_observation_t* obs);
+double* get_base_orientation(llapi_observation_t* obs);
 double* get_base_linear_velocity(llapi_observation_t* obs);
 double* get_base_angular_velocity(llapi_observation_t* obs);
 

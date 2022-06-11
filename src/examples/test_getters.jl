@@ -1,4 +1,3 @@
-#  
 using Revise
 using DigitLLComms 
 
@@ -17,6 +16,7 @@ end
 @show  get_motor_velocities(Ref(observation))
 @show  get_motor_torques(Ref(observation))
 @show  get_base_translation(Ref(observation))
+@show  get_base_orientation(Ref(observation))
 @show  get_base_linear_velocity(Ref(observation))
 @show  get_base_angular_velocity(Ref(observation))
 @show  get_imu_magnetic_field(Ref(observation))
