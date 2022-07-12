@@ -1,6 +1,6 @@
 module DigitLLComms
-
-run(`bash -c 'cd src/sim/ws && catkin_make'`) 
+ 
+run(`bash -c 'catkin_make -C src/sim/ws'`) 
 run(`bash -c 'source src/sim/ws/devel/setup.bash'`) 
 
 using Rotations 
