@@ -1,7 +1,9 @@
 module DigitLLComms
- 
-run(`bash -c 'catkin_make -C src/sim/ws'`) 
-run(`bash -c 'source src/sim/ws/devel/setup.bash'`) 
+
+wspath = joinpath(@__DIR__, "sim/ws")
+wssource = joinpath(wspath, "devel/setup.bash")
+run(`catkin_make -C $wspath`) 
+run(`bash -c 'source '$wssource''`) 
 
 using Rotations 
 using LinearAlgebra
