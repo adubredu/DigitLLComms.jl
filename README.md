@@ -12,7 +12,7 @@ Julia package for sending low-level commands and receiving low-level observation
 
 ## Notice
 - This package communicates with Digit's low-level control system via two main ways. 
-- The first approach, which is the most stable and reliable, is over ROS services. An example of how to use this approach is [here](examples/test_ros_observation.jl)
+- The first approach, which is the most stable and reliable, is over ROS services. An example of how to use this approach is [here](examples/test_ros_observation.jl). This approach was tested on Ubuntu 18.04 and ROS Melodic. It should however work with any modern ROS 1 versions.
 - The second approach uses Julia's nifty [ccall](https://docs.julialang.org/en/v1/manual/calling-c-and-fortran-code/) functionality to call functions in an extension of Agility Robotics's original low-level API C code. This approach, although works reliably, causes a segmentation fault whenever you quit the program. This is an open bug which I'm still figuring out how to fix. Any help with this will be appreciated.
 
 Both approaches are low-latency and have been used to run 400Hz controllers on the physical digit robot.
@@ -27,7 +27,7 @@ cd DigitLLComms.jl/src/sim
 ```
 If running on the physical digit, replace `./run_sim.sh` with `./digit_real.sh`.
 
-After doing this, you can check [this example](examples/test_ros_observation.jl) on example usage.
+After doing this, you can check [this example](examples/test_ros_observation.jl) for example usage.
 
 ### Second approach
 Check the examples in [examples](examples) except those labelled with "ros" for example usage. 
