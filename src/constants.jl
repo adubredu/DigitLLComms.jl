@@ -41,3 +41,7 @@ Locomotion = 3
 
 NUM_MOTORS = 20
 NUM_JOINTS = 10
+
+command_service_name = "/command_service"
+observation_service_name = "/observation_service"
+ros_node_name = "low_level_api"

@@ -26,3 +26,6 @@ function llapi_get_limits()
     return limits 
 end
   
+function initialize_ros_node()
+    init_node(ros_node_name)
+end

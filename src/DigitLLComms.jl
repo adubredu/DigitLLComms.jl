@@ -1,10 +1,21 @@
 module DigitLLComms
 
+run(`bash -c 'source src/sim/ws/devel/setup.bash'`) 
+
+using Rotations 
+using LinearAlgebra
+using RobotOS 
+@rosimport digit_msgs.srv: Digit_Observation_srv, Digit_Commands_srv 
+rostypegen(@__MODULE__)
+using .digit_msgs.srv 
+
 include("constants.jl")
 include("types.jl")
 include("initialize.jl")
 include("get.jl")
 include("set.jl")
+include("utils.jl")
+
 
 # functions
 export llapi_init,
@@ -41,6 +52,12 @@ export  llapi_get_observation,
 # setters
 export send_command,
        llapi_send_command
+
+# ros interface
+export initialize_ros_node,
+       send_ros_motor_command,
+       get_ros_observation,
+       get_generalized_coordinates
 
 # constants 
 export  LeftHipRoll,

@@ -1,1 +1,3 @@
 /Manifest.toml
+src/sim/ws/build
+src/sim/ws/devel 
