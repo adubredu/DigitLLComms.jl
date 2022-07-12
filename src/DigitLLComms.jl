@@ -2,8 +2,10 @@ module DigitLLComms
 
 wspath = joinpath(@__DIR__, "sim/ws")
 wssource = joinpath(wspath, "devel/setup.bash")
+llapipath = joinpath(wspath, "src/digit_llapi/libs/libartl")
 run(`catkin_make -C $wspath`) 
 run(`bash -c 'source '$wssource''`) 
+run(`make -C $llapipath`)
 
 using Rotations 
 using LinearAlgebra
