@@ -11,7 +11,7 @@ Julia package for sending low-level commands and receiving low-level observation
 
 
 ## Notice
-- This package communicates with Digit's low-level control system via two main ways. 
+- This package communicates with Digit's low-level API via two main ways. 
 - The first approach, which is the most stable and reliable, is over ROS services. An example of how to use this approach is [here](examples/test_ros_observation.jl). This approach was tested on Ubuntu 18.04 and ROS Melodic. It should however work with any modern ROS 1 versions.
 - The second approach uses Julia's nifty [ccall](https://docs.julialang.org/en/v1/manual/calling-c-and-fortran-code/) functionality to call functions in an extension of Agility Robotics's original low-level API C code. This approach, although works reliably, causes a segmentation fault whenever you quit the program. This is an open bug which I'm still figuring out how to fix. Any help with this will be appreciated.
 
