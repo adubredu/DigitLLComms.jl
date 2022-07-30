@@ -33,6 +33,6 @@ end
 function rpy_to_quat(q::Vector{Float64})
     ypr = RotZYX(q...)
     qr = QuatRotation(ypr)
-    quat = [qr.q.s, qr.q.v3, qr.q.v2, qr.q.v1]
+    quat = [qr.q.v3, qr.q.v2, qr.q.v1, qr.q.s]
     return quat
 end
