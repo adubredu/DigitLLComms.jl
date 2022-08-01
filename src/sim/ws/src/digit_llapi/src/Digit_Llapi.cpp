@@ -35,7 +35,7 @@ void Digit_Llapi::Publish_Observation_(const llapi_observation_t &obs,
     /* Motors */
     std::copy(std::begin(obs.motor.position), std::end(obs.motor.position), std::begin(observations_msg_.motor_position));
     std::copy(std::begin(obs.motor.velocity), std::end(obs.motor.velocity), std::begin(observations_msg_.motor_velocity));
-    std::copy(std::begin(obs.motor.torque), std::end(obs.motor.torque), std::begin(observations_msg_.motor_torque));
+    std::copy(std::begin(obs.motor.torque), std::end(obs.motor.torque), std::begin(observations_msg_.motor_torque_measured));
 
     /* Joints */
     std::copy(std::begin(obs.joint.position), std::end(obs.joint.position), std::begin(observations_msg_.joint_position));
@@ -108,7 +108,7 @@ void Digit_Llapi::Print_Observation_()
 
     for (int i = 0; i < NUM_MOTORS; i++)
     {
-        std::cout << "motor_torque[" << i << "]: " << observations_msg_.motor_torque[i] << "\n";
+        std::cout << "motor_torque[" << i << "]: " << observations_msg_.motor_torque_measured[i] << "\n";
     }
 
     std::cout << "\n-> Joints\n";

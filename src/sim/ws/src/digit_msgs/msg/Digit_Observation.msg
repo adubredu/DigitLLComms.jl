@@ -20,7 +20,7 @@ float64[3] imu_magnetic_field
 # Motor
 float64[20] motor_position
 float64[20] motor_velocity
-float64[20] motor_torque
+float64[20] motor_torque_measured
 
 # Joint
 float64[10] joint_position
@@ -30,4 +30,9 @@ float64[10] joint_velocity
 float64[20] motor_limit_torque
 float64[20] motor_limit_damping
 float64[20] motor_limit_velocity
+
+# Generalized Coordinates
+float64[30] q_all
+float64[30] qdot_all
+
 

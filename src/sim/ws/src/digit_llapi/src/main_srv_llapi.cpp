@@ -55,7 +55,7 @@ bool observation_server(digit_msgs::Digit_Observation_srv::Request &req, digit_m
     /* Motors */
     std::copy(std::begin(observation.motor.position), std::end(observation.motor.position), std::begin(res.obs.motor_position));
     std::copy(std::begin(observation.motor.velocity), std::end(observation.motor.velocity), std::begin(res.obs.motor_velocity));
-    std::copy(std::begin(observation.motor.torque), std::end(observation.motor.torque), std::begin(res.obs.motor_torque));
+    std::copy(std::begin(observation.motor.torque), std::end(observation.motor.torque), std::begin(res.obs.motor_torque_measured));
 
     /* Joints */
     std::copy(std::begin(observation.joint.position), std::end(observation.joint.position), std::begin(res.obs.joint_position));

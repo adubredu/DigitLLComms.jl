@@ -81,7 +81,11 @@ function get_ros_observation()
     return response.obs 
 end
 
-function get_generalized_coordinates(observation) 
+function get_generalized_coordinates(observation)
+    return (observation.q_all, observation.qdot_all)
+end 
+
+function get_generalized_coordinates2(observation) 
     q_pos = observation.base_translation
     qdot_pos = observation.base_linear_velocity 
     q_angvel = observation.base_angular_velocity 
