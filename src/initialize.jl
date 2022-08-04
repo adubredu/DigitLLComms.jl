@@ -24,8 +24,4 @@ end
 function llapi_get_limits()
     limits = @ccall ll.llapi_get_limits()::Ref{llapi_limits_t}
     return limits 
-end
-  
-function initialize_ros_node()
-    init_node(ros_node_name)
-end
+end 

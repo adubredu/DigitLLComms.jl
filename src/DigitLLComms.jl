@@ -1,18 +1,7 @@
 module DigitLLComms
 
-wspath = joinpath(@__DIR__, "sim/ws")
-wssource = joinpath(wspath, "devel/setup.bash")
-llapipath = joinpath(wspath, "src/digit_llapi/libs/libartl")
-run(`make -C $llapipath`)
-run(`catkin_make -C $wspath`) 
-run(`bash -c 'source '$wssource''`) 
-
 using Rotations 
-using LinearAlgebra
-using RobotOS 
-@rosimport digit_msgs.srv: Digit_Observation_srv, Digit_Commands_srv 
-rostypegen(@__MODULE__)
-using .digit_msgs.srv 
+using LinearAlgebra 
 
 include("constants.jl")
 include("types.jl")
@@ -58,11 +47,6 @@ export  llapi_get_observation,
 export send_command,
        llapi_send_command
 
-# ros interface
-export initialize_ros_node,
-       send_ros_motor_command,
-       get_ros_observation,
-       get_generalized_coordinates
 
 # constants 
 export  LeftHipRoll,
